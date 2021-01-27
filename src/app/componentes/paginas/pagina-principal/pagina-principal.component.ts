@@ -22,13 +22,13 @@ export class PaginaPrincipalComponent implements OnInit {
   fileToUpload: File = null;
 
   formularioPago = new FormGroup({
-    inputMunicipio: new FormControl('Los Amates'),
-    inputFecha: new FormControl('2021-01-27'),
-    inputColegiatura: new FormControl('1630'),
-    inputPagoEfectivo: new FormControl('1630'),
-    inputPagoCheque: new FormControl('50'),
-    inputCheckMora: new FormControl(true),
-    inputMora: new FormControl('50'),
+    inputMunicipio: new FormControl(''),
+    inputFecha: new FormControl(''),
+    inputColegiatura: new FormControl(''),
+    inputPagoEfectivo: new FormControl(''),
+    inputPagoCheque: new FormControl(''),
+    inputCheckMora: new FormControl(false),
+    inputMora: new FormControl(''),
     importFile: new FormControl('', Validators.required)
   });
 
