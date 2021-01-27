@@ -50,9 +50,6 @@ export class PaginaPrincipalComponent implements OnInit {
 
   async enviarFormulario(data) {
 
-    // const archivoPdf = this.inputFilePdf.nativeElement.files[0];
-    // console.log(await this.fileToUpload.arrayBuffer());
-
     const boleta = {
       colegiatura: this.formularioPago.value.inputColegiatura,
       pagoCheque: this.formularioPago.value.inputPagoCheque,
@@ -75,22 +72,6 @@ export class PaginaPrincipalComponent implements OnInit {
     }
 
 
-
-    // const formulario = new FormData();
-    // formulario.set('municipio', this.formularioPago.controls.inputMunicipio.value);
-    // formulario.set('fecha', this.formularioPago.controls.inputFecha.value);
-    // formulario.set('colegiatura', this.formularioPago.controls.inputColegiatura.value);
-    // formulario.set('mora', this.formularioPago.controls.inputCheckMora.value);
-    // formulario.set('montoMora', this.formularioPago.controls.inputMora.value);
-    // formulario.set('boletaPago', arhivoPdf);
-
-    // this.httpClient.post<any>(this.SERVER_URL, formulario).subscribe(
-    //   (res) => {
-    //     window.open('http://localhost:3000/' + res.file);
-    //     console.log(res);
-    //   },
-    //   (err) => console.log('ocurrio error')
-    // );
   }
 
   onChangeMora() {

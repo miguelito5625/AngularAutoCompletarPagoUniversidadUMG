@@ -26,9 +26,6 @@ export class LlenarBoletaService {
     const totalAPagar = Number(boleta.colegiatura) + Number(montoMora);
     console.log('total: ' + totalAPagar);
 
-    // const filePath = req.file.path;
-    //Obtiene el documento pdf guardado en el sistema
-    // const existingPdfBytes = await fs.readFileSync(filePath);
 
     //Carga los bytes del documento pdf
     const pdfDoc = await PDFDocument.load(existingPdfBytes)
@@ -237,8 +234,6 @@ export class LlenarBoletaService {
     var blobURL = URL.createObjectURL(blob);
     window.open(blobURL);
 
-    // const urlPdf: any = doc.output('bloburl');
-    // window.open(urlPdf, '_blank');
 
   }
 
